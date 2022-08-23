@@ -5,7 +5,7 @@
 // [1, 2, 3, 6, 2] -> 0
 // [10, 11, 12, 13, 14] -> 5
 
-int[] array = new int[10];
+int[] array = new int[123];
 Random rand = new Random();
 for (int i = 0; i < array.Length; i++)
 {
@@ -13,9 +13,9 @@ for (int i = 0; i < array.Length; i++)
 }
 Console.WriteLine('[' + string.Join(",", array) + ']');
 int count = 0;
-for (int i = 0; array[i] < array.Length; i++)
+for (int i = 0; i < array.Length; i++)
 {
-if(array[i] > 10 || array[i]<100)
+if(array[i] > 10 && array[i]<100)
 {
     count++;
 }
